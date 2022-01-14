@@ -1,12 +1,11 @@
+import Footer from 'components/Footer'
 import React from 'react'
-
-import Footer from '@components/Footer'
 
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <main className="flex-1 flex flex-col items-center justify-center">
-        <h1 className="text-4xl mb-8">
+        <h1 className="text-5xl font-bold mb-8">
           Welcome to{' '}
           <a
             href="https://nextjs.org"
@@ -17,8 +16,8 @@ const Home = () => {
 
         <p className="mb-8">
           Get started by editing{' '}
-          <code className="py-1.5 px-2 bg-gray-100 rounded-lg">
-            pages/index.js
+          <code className="py-1.5 px-2 bg-gray-100 text-gray-900 rounded-lg">
+            src/pages/index.js
           </code>
         </p>
 
