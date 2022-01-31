@@ -6,8 +6,9 @@ actions:
     type: delete
     files: README.md,prjkt.yaml
   -
-    name: Which package manager to use?
+    name: Install dependencies
     type: exec-option
+    prompt: Which package manager to use?
     options: pnpm, yarn, npm
     option-pnpm: pnpm i
     option-yarn: yarn
