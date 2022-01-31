@@ -2,9 +2,9 @@ welcome_message: "Getting things ready"
 
 actions:
   - 
-    name: Delete readme, prjkt.yaml and lock file(s)
+    name: Delete readme, prjkt.yaml
     type: delete
-    files: README.md, *lock*, prjkt.yaml
+    files: README.md,prjkt.yaml
   -
     name: Which package manager to use?
     type: exec-option
