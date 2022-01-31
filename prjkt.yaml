@@ -1,4 +1,4 @@
-before_message: "Getting things ready"
+welcome_message: "Getting things ready"
 
 actions:
   -
