@@ -9,8 +9,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Next App Boilerplate</title>
-        <meta name="description" content="Next App Boilerplate" />
+        <title>{"<<project_name>>"}</title>
+        <meta name="description" content="<<project_name>>" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -1,34 +1,25 @@
-welcome_message: "Getting things ready"
+welcome_message: "Getting things ready for ya mate"
 
 actions:
   - 
-    name: Delete readme, prjkt.yaml
+    name: Deleting readme, prjkt.yaml, lock file(s)
     type: delete
-    files: README.md,prjkt.yaml
+    files: README.md, prjkt.yaml, *lock*
   -
     name: Install dependencies
     type: exec-option
-    prompt: Which package manager to use?
+    prompt: Pick your poison
     options: pnpm, yarn, npm, none
     option-pnpm: pnpm i
     option-yarn: yarn
     option-npm: npm i
   -
-    name: Replace some string
+    name: Set project name
     type: replace
-    prompt: Name of the project
+    prompt: So what are we makin today?
     pattern: <<project_name>>
-  -
-    name: Error running this command
-    type: exec
-    run: lmao-ded
-    error_message: Some error occurred
-    continue: true # keep going even if this step fails
-  -
-    name: End
-    type: exec
-    run: echo End
+    files: package.json, **/*.ts
 
-error_message: "Ask for help here: https://discord.com"
+error_message: "LOL this shit broke already! Shoot me a message twitter.com/pathetic_geek with the ss"
 
-success_message: "A message that comes up after successful execution of steps"
+success_message: "Looks like this setup went smoother than it did infront of my crush! ✨ Enjoy"
