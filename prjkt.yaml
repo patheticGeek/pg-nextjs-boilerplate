@@ -1,0 +1,26 @@
+before_message: "Getting things ready"
+
+actions:
+  -
+    name: Execute some command
+    type: exec
+    run: echo Execute some command
+  -
+    name: Replace some string
+    type: replace
+    prompt: Name of the project
+    pattern: <<project_name>>
+  -
+    name: Error running this command
+    type: exec
+    run: lmao-ded
+    error_message: Some error occurred # an error message for this specific step
+    continue: true # keep going even if this step fails
+  -
+    name: End
+    type: exec
+    run: echo End
+
+error_message: "Ask for help here: https://discord.com"
+
+success_message: "A message that comes up after successful execution of steps"
