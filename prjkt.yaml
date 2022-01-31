@@ -17,7 +17,7 @@ actions:
     name: Set project name
     type: replace
     prompt: So what are we makin today?
-    pattern: <<project_name>>
+    to_replace: <<project_name>>
     files: package.json, **/*.ts
 
 error_message: "LOL this shit broke already! Shoot me a message twitter.com/pathetic_geek with the ss"
