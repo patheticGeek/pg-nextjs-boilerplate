@@ -1,0 +1,25 @@
+welcome_message: "Getting things ready for ya mate"
+
+actions:
+  - 
+    name: Deleting readme, prjkt.yaml, lock file(s)
+    type: delete
+    files: README.md, prjkt.yaml, *lock*
+  -
+    name: Install dependencies
+    type: exec-option
+    prompt: Pick your poison
+    options: pnpm, yarn, npm, none
+    option-pnpm: pnpm i
+    option-yarn: yarn
+    option-npm: npm i
+  -
+    name: Set project name
+    type: replace
+    prompt: So what are we makin today?
+    to_replace: <<project_name>>
+    files: package.json, **/*.ts
+
+error_message: "LOL this shit broke already! Shoot me a message twitter.com/pathetic_geek with the ss"
+
+success_message: "Looks like this setup went smoother than it did infront of my crush! ✨ Enjoy"
