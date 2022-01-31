@@ -9,7 +9,7 @@ actions:
     name: Install dependencies
     type: exec-option
     prompt: Which package manager to use?
-    options: pnpm, yarn, npm
+    options: pnpm, yarn, npm, none
     option-pnpm: pnpm i
     option-yarn: yarn
     option-npm: npm i
