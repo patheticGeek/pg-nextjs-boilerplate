@@ -1,10 +1,17 @@
 welcome_message: "Getting things ready"
 
 actions:
+  - 
+    name: Delete readme and lock file
+    type: delete
+    files: README.md, pnpm-lock.json
   -
-    name: Execute some command
-    type: exec
-    run: echo Execute some command
+    name: Which package manager to use?
+    type: exec-option
+    options: pnpm, yarn, npm
+    option-pnpm: pnpm i
+    option-yarn: yarn
+    option-npm: npm i
   -
     name: Replace some string
     type: replace
@@ -14,7 +21,7 @@ actions:
     name: Error running this command
     type: exec
     run: lmao-ded
-    error_message: Some error occurred # an error message for this specific step
+    error_message: Some error occurred
     continue: true # keep going even if this step fails
   -
     name: End
