@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>{"<<project_name>>"}</title>
+        <title>{'<<project_name>>'}</title>
         <meta name="description" content="<<project_name>>" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
